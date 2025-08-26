@@ -1,0 +1,11 @@
+    <p *ngif="mostrarMensagem">
+  Esta mensagem esta sendo exibida 
+    </p>
+    <button(click)="toggleMensagem()">visualizar/ocultar</button>
+
+    <ul>
+        <li *ngfor="let item of listaItem">{{item}}     </li>
+
+    </ul>
+
+
