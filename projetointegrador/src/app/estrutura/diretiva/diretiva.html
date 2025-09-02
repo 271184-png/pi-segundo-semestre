@@ -1,11 +1,16 @@
-    <p *ngif="mostrarMensagem">
+<button (click) = toggleMensagem() >  visualizar/ocultar</button>
+
+<p *ngif="mostrarMensagem">
   Esta mensagem esta sendo exibida 
     </p>
-    <button(click)="toggleMensagem()">visualizar/ocultar</button>
+    <button (click)="toggleMensagem()">visualizar/ocultar</button>
 
-    <ul>
-        <li *ngfor="let item of listaItem">{{item}}     </li>
+ <ul *ngif="mostrarMensagem">
+  <li *ngFor="let aluno of alunos"
+  [ngClass]="{'azul': aluno.ativo, 'vermelho' : !aluno.ativo}"
+  [ngClass]="{'font-size.px': fonte}">{{aluno.id}} - {{aluno.nome}} - {{aluno.ativo}}</li>
+ </ul>
 
-    </ul>
-
+<button (click)="aumentarFonte()">+</button>
+<button (click)="aumentarFonte()">-</button>
 

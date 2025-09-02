@@ -8,16 +8,28 @@ import { Component } from '@angular/core';
 })
 export class Diretiva {
    mostrarMensagem = true;
+   fonte: number = 15;
+
 
   toggleMensagem(){
     this.mostrarMensagem = !this.mostrarMensagem;
   }
 
-  listaitens=[
-    {id:'10', nome: 'juninho',status:'ativo'},
-    {id:'11', nome: 'jean',status:'inativo'},
-    {id:'12', nome: 'arthur',status:'ativo'},
-    ]
+  aumentarFonte(){
+    this.fonte = this.fonte +2;
+  }
+  dimunirFonte(){
+
+    this.fonte = this.fonte +2;
+  }
+
+
+
+  alunos = [
+    {id:'10', nome: 'juninho',ativo:false},
+    {id:'11', nome: 'jean',ativo:true},
+    {id:'12', nome: 'arthur',ativo:true},
+    ];
 
     
 }
