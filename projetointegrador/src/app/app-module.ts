@@ -3,10 +3,13 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing-module';
 import { App } from './app';
+import { Atividade } from './AngularMaterial/atividade/atividade';
+
 
 @NgModule({
   declarations: [
-    App
+    App,
+  
   ],
   imports: [
     BrowserModule,

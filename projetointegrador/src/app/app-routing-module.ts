@@ -3,8 +3,13 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {path: 'estrutura', 
-    loadChildren: () => import('./estrutura/estrutura-module').then(m => m.EstruturaModule)
-  }
+    loadChildren: () => import('./estrutura/estrutura-module').then(m => m.EstruturaModule)},
+
+ {path: 'angular-material', 
+    loadChildren: () => import('./angular-material/angular-material-module').then(m => m.AngularMaterialModule)}
+
+  
+  
 ];
 
 @NgModule({
